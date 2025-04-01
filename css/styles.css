@@ -1,0 +1,130 @@
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background-color: #f6f8fa; /* Светло-серый фон */
+    color: #24292e; /* Тёмно-серый цвет текста */
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер для центрирования контента */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #24292e; /* Тёмно-серый фон */
+    color: #ffffff; /* Белый цвет текста */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+div
+{
+    justify-content: center;
+    width: 40%;;
+}
+/* Навигационное меню */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Основной контент */
+main {
+    background-color: #ffffff; /* Белый фон */
+    padding: 20px;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #0366d6; /* Синий цвет заголовка */
+}
+
+p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Галерея изображений */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery img {
+    width: calc(33.333% - 10px); /* Три изображения в ряд с отступами */
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Подвал сайта */
+footer {
+    background-color: #f6f8fa; /* Светло-серый фон */
+    color: #586069; /* Серый цвет текста */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+}
+
+footer a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .gallery img {
+        width: calc(50% - 10px); /* Два изображения в ряд на планшетах */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        width: 100%; /* Одно изображение в ряд на мобильных устройствах */
+    }
+}
